@@ -17,7 +17,7 @@ public class SampleApp {
     }
 
     public String hello() {
-        InnerClass innerClass = new InnerClass(5);
+        InnerClass innerClass = new InnerClass(1);
         String name = Strings.repeat("a", innerClass.getValue());
         Supplier<String> supplier = () -> String.format("Hello %s!", name);
         return supplier.get();
